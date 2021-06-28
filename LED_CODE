@@ -1,0 +1,566 @@
+#include <FastLED.h>
+#define NUM_LEDS 14
+#define DATA_PIN1 6
+#define DATA_PIN2 7
+#define DATA_PIN3 8
+#define DATA_PIN4 9
+#define COLORCODE {0,220,30} //.setRGB( 224, 224, 224);
+
+
+CRGB leds1[NUM_LEDS];
+CRGB leds2[NUM_LEDS];
+CRGB leds3[NUM_LEDS];
+CRGB leds4[NUM_LEDS];
+
+void ANZEIGE_1(int NUMBER)
+{
+   FastLED.addLeds<NEOPIXEL, DATA_PIN1>(leds1, NUM_LEDS);
+     if(NUMBER == 0){
+        /*for (int i = 2; i < 14; i++)
+        {
+           leds1[i] = CRGB::Red;
+        }
+        */
+     leds1[2] = CRGB::Red;
+     leds1[3] = CRGB::Red;
+     leds1[4] = CRGB::Red;
+     leds1[5] = CRGB::Red;
+     leds1[6] = CRGB::Red;
+     leds1[7] = CRGB::Red;
+     leds1[8] = CRGB::Red;
+     leds1[9] = CRGB::Red;
+     leds1[10] = CRGB::Red;
+     leds1[11] = CRGB::Red;
+     leds1[12] = CRGB::Red;
+     leds1[13] = CRGB::Red;
+  }
+  else if(NUMBER == 1){
+     leds1[7] = CRGB::Red;
+     leds1[6] = CRGB::Red;
+     leds1[9] = CRGB::Red;
+     leds1[8] = CRGB::Red;
+  }
+  else if(NUMBER == 2){
+     leds1[10] = CRGB::Red;
+     leds1[11] = CRGB::Red;
+     leds1[8] = CRGB::Red;
+     leds1[9] = CRGB::Red;
+     leds1[0] = CRGB::Red;
+     leds1[1] = CRGB::Red;
+     leds1[3] = CRGB::Red;
+     leds1[2] = CRGB::Red;
+     leds1[4] = CRGB::Red;
+     leds1[5] = CRGB::Red;
+     
+  }
+    else if(NUMBER == 3){
+     leds1[10] = CRGB::Red;
+     leds1[11] = CRGB::Red;
+     leds1[8] = CRGB::Red;
+     leds1[9] = CRGB::Red;
+     leds1[0] = CRGB::Red;
+     leds1[1] = CRGB::Red;
+     leds1[6] = CRGB::Red;
+     leds1[7] = CRGB::Red;
+     leds1[4] = CRGB::Red;
+     leds1[5] = CRGB::Red;
+     
+  }
+      else if(NUMBER == 4){
+     leds1[13] = CRGB::Red;
+     leds1[12] = CRGB::Red;
+     leds1[8] = CRGB::Red;
+     leds1[9] = CRGB::Red;
+     leds1[0] = CRGB::Red;
+     leds1[1] = CRGB::Red;
+     leds1[6] = CRGB::Red;
+     leds1[7] = CRGB::Red;
+     
+  }
+        else if(NUMBER == 5){
+     leds1[13] = CRGB::Red;
+     leds1[12] = CRGB::Red;
+     leds1[10] = CRGB::Red;
+     leds1[11] = CRGB::Red;
+     leds1[0] = CRGB::Red;
+     leds1[1] = CRGB::Red;
+     leds1[6] = CRGB::Red;
+     leds1[7] = CRGB::Red;
+     leds1[4] = CRGB::Red;
+     leds1[5] = CRGB::Red;
+  }
+          else if(NUMBER == 6){
+     leds1[13] = CRGB::Red;
+     leds1[12] = CRGB::Red;
+     leds1[3] = CRGB::Red;
+     leds1[2] = CRGB::Red;
+     leds1[0] = CRGB::Red;
+     leds1[1] = CRGB::Red;
+     leds1[6] = CRGB::Red;
+     leds1[7] = CRGB::Red;
+     leds1[4] = CRGB::Red;
+     leds1[5] = CRGB::Red;
+     leds1[10] = CRGB::Red;
+     leds1[11] = CRGB::Red;
+  }
+   else if(NUMBER == 7){
+     leds1[9] = CRGB::Red;
+     leds1[8] = CRGB::Red;
+     leds1[6] = CRGB::Red;
+     leds1[7] = CRGB::Red;
+     leds1[10] = CRGB::Red;
+     leds1[11] = CRGB::Red;
+  }
+   else if(NUMBER == 8){
+     leds1[0] = CRGB::Red;
+     leds1[1] = CRGB::Red;
+     leds1[2] = CRGB::Red;
+     leds1[3] = CRGB::Red;
+     leds1[4] = CRGB::Red;
+     leds1[5] = CRGB::Red;
+     leds1[6] = CRGB::Red;
+     leds1[7] = CRGB::Red;
+     leds1[8] = CRGB::Red;
+     leds1[9] = CRGB::Red;
+     leds1[10] = CRGB::Red;
+     leds1[11] = CRGB::Red;
+     leds1[12] = CRGB::Red;
+     leds1[13] = CRGB::Red;
+  }
+    else if(NUMBER == 9){
+     leds1[0] = CRGB::Red;
+     leds1[1] = CRGB::Red;
+     leds1[4] = CRGB::Red;
+     leds1[5] = CRGB::Red;
+     leds1[6] = CRGB::Red;
+     leds1[7] = CRGB::Red;
+     leds1[8] = CRGB::Red;
+     leds1[9] = CRGB::Red;
+     leds1[10] = CRGB::Red;
+     leds1[11] = CRGB::Red;
+     leds1[12] = CRGB::Red;
+     leds1[13] = CRGB::Red;
+  }
+
+   FastLED.show();
+}
+void ANZEIGE_2(int NUMBER)
+{
+   FastLED.addLeds<NEOPIXEL, DATA_PIN2>(leds2, NUM_LEDS);
+     if(NUMBER == 0){
+     leds2[2] = CRGB::Red;
+     leds2[3] = CRGB::Red;
+     leds2[4] = CRGB::Red;
+     leds2[5] = CRGB::Red;
+     leds2[6] = CRGB::Red;
+     leds2[7] = CRGB::Red;
+     leds2[8] = CRGB::Red;
+     leds2[9] = CRGB::Red;
+     leds2[10] = CRGB::Red;
+     leds2[11] = CRGB::Red;
+     leds2[12] = CRGB::Red;
+     leds2[13] = CRGB::Red;
+  }
+  else if(NUMBER == 1){
+     leds2[10] = CRGB::Red;
+     leds2[11] = CRGB::Red;
+     leds2[13] = CRGB::Red;
+     leds2[12] = CRGB::Red;
+  }
+  else if(NUMBER == 2){
+     leds2[3] = CRGB::Red;
+     leds2[2] = CRGB::Red;
+     leds2[12] = CRGB::Red;
+     leds2[13] = CRGB::Red;
+     leds2[0] = CRGB::Red;
+     leds2[1] = CRGB::Red;
+     leds2[6] = CRGB::Red;
+     leds2[7] = CRGB::Red;
+     leds2[8] = CRGB::Red;
+     leds2[9] = CRGB::Red;
+     leds2[5] = CRGB::Black;
+     leds2[4] = CRGB::Black;
+     
+  }
+    else if(NUMBER == 3){
+     leds2[3] = CRGB::Red;
+     leds2[2] = CRGB::Red;
+     leds2[12] = CRGB::Red;
+     leds2[13] = CRGB::Red;
+     leds2[0] = CRGB::Red;
+     leds2[1] = CRGB::Red;
+     leds2[11] = CRGB::Red;
+     leds2[10] = CRGB::Red;
+     leds2[9] = CRGB::Red;
+     leds2[8] = CRGB::Red;
+     
+  }
+      else if(NUMBER == 4){
+     leds2[5] = CRGB::Red;
+     leds2[4] = CRGB::Red;
+     leds2[1] = CRGB::Red;
+     leds2[0] = CRGB::Red;
+     leds2[11] = CRGB::Red;
+     leds2[10] = CRGB::Red;
+     leds2[12] = CRGB::Red;
+     leds2[13] = CRGB::Red;
+     
+  }
+        else if(NUMBER == 5){
+     leds2[3] = CRGB::Red;
+     leds2[2] = CRGB::Red;
+     leds2[5] = CRGB::Red;
+     leds2[4] = CRGB::Red;
+     leds2[1] = CRGB::Red;
+     leds2[0] = CRGB::Red;
+     leds2[11] = CRGB::Red;
+     leds2[10] = CRGB::Red;
+     leds2[8] = CRGB::Red;
+     leds2[9] = CRGB::Red;
+  }
+          else if(NUMBER == 6){
+     leds2[0] = CRGB::Red;
+     leds2[1] = CRGB::Red;
+     leds2[2] = CRGB::Red;
+     leds2[3] = CRGB::Red;
+     leds2[4] = CRGB::Red;
+     leds2[5] = CRGB::Red;
+     leds2[6] = CRGB::Red;
+     leds2[7] = CRGB::Red;
+     leds2[8] = CRGB::Red;
+     leds2[9] = CRGB::Red;
+     leds2[10] = CRGB::Red;
+     leds2[11] = CRGB::Red;
+  }
+   else if(NUMBER == 7){
+     leds2[2] = CRGB::Red;
+     leds2[3] = CRGB::Red;
+     leds2[12] = CRGB::Red;
+     leds2[13] = CRGB::Red;
+     leds2[11] = CRGB::Red;
+     leds2[10] = CRGB::Red;
+  }
+   else if(NUMBER == 8){
+     leds2[0] = CRGB::Red;
+     leds2[1] = CRGB::Red;
+     leds2[2] = CRGB::Red;
+     leds2[3] = CRGB::Red;
+     leds2[4] = CRGB::Red;
+     leds2[5] = CRGB::Red;
+     leds2[6] = CRGB::Red;
+     leds2[7] = CRGB::Red;
+     leds2[8] = CRGB::Red;
+     leds2[9] = CRGB::Red;
+     leds2[10] = CRGB::Red;
+     leds2[11] = CRGB::Red;
+     leds2[12] = CRGB::Red;
+     leds2[13] = CRGB::Red;
+  }
+    else if(NUMBER == 9){
+     leds2[0] = CRGB::Red;
+     leds2[1] = CRGB::Red;
+     leds2[4] = CRGB::Red;
+     leds2[5] = CRGB::Red;
+     leds2[3] = CRGB::Red;
+     leds2[2] = CRGB::Red;
+     leds2[8] = CRGB::Red;
+     leds2[9] = CRGB::Red;
+     leds2[10] = CRGB::Red;
+     leds2[11] = CRGB::Red;
+     leds2[12] = CRGB::Red;
+     leds2[13] = CRGB::Red;
+  }
+
+   FastLED.show();
+}
+void ANZEIGE_3(int NUMBER)
+{
+   FastLED.addLeds<NEOPIXEL, DATA_PIN3>(leds3, NUM_LEDS);
+     if(NUMBER == 0){
+     leds3[0] = CRGB::Red;
+     leds3[1] = CRGB::Red;
+     leds3[4] = CRGB::Red;
+     leds3[5] = CRGB::Red;
+     leds3[6] = CRGB::Red;
+     leds3[7] = CRGB::Red;
+     leds3[8] = CRGB::Red;
+     leds3[9] = CRGB::Red;
+     leds3[10] = CRGB::Red;
+     leds3[11] = CRGB::Red;
+     leds3[12] = CRGB::Red;
+     leds3[13] = CRGB::Red;
+  }
+  else if(NUMBER == 1){
+     leds3[0] = CRGB::Red;
+     leds3[1] = CRGB::Red;
+     leds3[4] = CRGB::Red;
+     leds3[5] = CRGB::Red;
+  }
+  else if(NUMBER == 2){
+     leds3[12] = CRGB::Red;
+     leds3[13] = CRGB::Red;
+     leds3[0] = CRGB::Red;
+     leds3[1] = CRGB::Red;
+     leds3[3] = CRGB::Red;
+     leds3[2] = CRGB::Red;
+     leds3[9] = CRGB::Red;
+     leds3[8] = CRGB::Red;
+     leds3[6] = CRGB::Red;
+     leds3[7] = CRGB::Red;
+     
+  }
+    else if(NUMBER == 3){
+     leds3[12] = CRGB::Red;
+     leds3[13] = CRGB::Red;
+     leds3[0] = CRGB::Red;
+     leds3[1] = CRGB::Red;
+     leds3[3] = CRGB::Red;
+     leds3[2] = CRGB::Red;
+     leds3[4] = CRGB::Red;
+     leds3[5] = CRGB::Red;
+     leds3[6] = CRGB::Red;
+     leds3[7] = CRGB::Red;
+     
+  }
+      else if(NUMBER == 4){
+     leds3[10] = CRGB::Red;
+     leds3[3] = CRGB::Red;
+     leds3[2] = CRGB::Red;
+     leds3[0] = CRGB::Red;
+     leds3[1] = CRGB::Red;
+     leds3[4] = CRGB::Red;
+     leds3[5] = CRGB::Red;
+     leds3[11] = CRGB::Red;
+     
+  }
+        else if(NUMBER == 5){
+     leds3[12] = CRGB::Red;
+     leds3[13] = CRGB::Red;
+     leds3[10] = CRGB::Red;
+     leds3[11] = CRGB::Red;
+     leds3[3] = CRGB::Red;
+     leds3[2] = CRGB::Red;
+     leds3[4] = CRGB::Red;
+     leds3[5] = CRGB::Red;
+     leds3[7] = CRGB::Red;
+     leds3[6] = CRGB::Red;
+  }
+          else if(NUMBER == 6){
+     leds3[12] = CRGB::Red;
+     leds3[13] = CRGB::Red;
+     leds3[2] = CRGB::Red;
+     leds3[3] = CRGB::Red;
+     leds3[4] = CRGB::Red;
+     leds3[5] = CRGB::Red;
+     leds3[6] = CRGB::Red;
+     leds3[7] = CRGB::Red;
+     leds3[8] = CRGB::Red;
+     leds3[9] = CRGB::Red;
+     leds3[10] = CRGB::Red;
+     leds3[11] = CRGB::Red;
+  }
+   else if(NUMBER == 7){
+     leds3[12] = CRGB::Red;
+     leds3[13] = CRGB::Red;
+     leds3[0] = CRGB::Red;
+     leds3[1] = CRGB::Red;   
+     leds3[4] = CRGB::Red;
+     leds3[5] = CRGB::Red;
+
+  }
+   else if(NUMBER == 8){
+     leds3[0] = CRGB::Red;
+     leds3[1] = CRGB::Red;
+     leds3[2] = CRGB::Red;
+     leds3[3] = CRGB::Red;
+     leds3[4] = CRGB::Red;
+     leds3[5] = CRGB::Red;
+     leds3[6] = CRGB::Red;
+     leds3[7] = CRGB::Red;
+     leds3[8] = CRGB::Red;
+     leds3[9] = CRGB::Red;
+     leds3[10] = CRGB::Red;
+     leds3[11] = CRGB::Red;
+     leds3[12] = CRGB::Red;
+     leds3[13] = CRGB::Red;
+  }
+    else if(NUMBER == 9){
+     leds3[0] = CRGB::Red;
+     leds3[1] = CRGB::Red;
+     leds3[2] = CRGB::Red;
+     leds3[3] = CRGB::Red;
+     leds3[12] = CRGB::Red;
+     leds3[13] = CRGB::Red;
+     leds3[10] = CRGB::Red;
+     leds3[11] = CRGB::Red;
+     leds3[4] = CRGB::Red;
+     leds3[5] = CRGB::Red;
+     leds3[6] = CRGB::Red;
+     leds3[7] = CRGB::Red;
+  }
+  
+   FastLED.show();
+}
+void ANZEIGE_4(int NUMBER)
+{
+   FastLED.addLeds<NEOPIXEL, DATA_PIN4>(leds4, NUM_LEDS);
+     if(NUMBER == 0){
+     leds4[12] = CRGB::Red;
+     leds4[13] = CRGB::Red;
+     leds4[0] = CRGB::Red;
+     leds4[1] = CRGB::Red;
+     leds4[4] = CRGB::Red;
+     leds4[5] = CRGB::Red;
+     leds4[6] = CRGB::Red;
+     leds4[7] = CRGB::Red;
+     leds4[8] = CRGB::Red;
+     leds4[9] = CRGB::Red;
+     leds4[10] = CRGB::Red;
+     leds4[11] = CRGB::Red;
+  }
+  else if(NUMBER == 1){
+     leds4[0] = CRGB::Red;
+     leds4[1] = CRGB::Red;
+     leds4[4] = CRGB::Red;
+     leds4[5] = CRGB::Red;
+  }
+  else if(NUMBER == 2){
+     leds4[12] = CRGB::Red;
+     leds4[13] = CRGB::Red;
+     leds4[0] = CRGB::Red;
+     leds4[1] = CRGB::Red;
+     leds4[3] = CRGB::Red;
+     leds4[2] = CRGB::Red;
+     leds4[9] = CRGB::Red;
+     leds4[8] = CRGB::Red;
+     leds4[7] = CRGB::Red;
+     leds4[6] = CRGB::Red;
+     
+  }
+    else if(NUMBER == 3){
+     leds4[12] = CRGB::Red;
+     leds4[13] = CRGB::Red;
+     leds4[0] = CRGB::Red;
+     leds4[1] = CRGB::Red;
+     leds4[3] = CRGB::Red;
+     leds4[2] = CRGB::Red;
+     leds4[4] = CRGB::Red;
+     leds4[5] = CRGB::Red;
+     leds4[7] = CRGB::Red;
+     leds4[6] = CRGB::Red;
+     
+  }
+      else if(NUMBER == 4){
+     leds4[11] = CRGB::Red;
+     leds4[10] = CRGB::Red;
+     leds4[3] = CRGB::Red;
+     leds4[2] = CRGB::Red;
+     leds4[4] = CRGB::Red;
+     leds4[5] = CRGB::Red;
+     leds4[0] = CRGB::Red;
+     leds4[1] = CRGB::Red;
+     
+  }
+        else if(NUMBER == 5){
+     leds4[13] = CRGB::Red;
+     leds4[12] = CRGB::Red;
+     leds4[11] = CRGB::Red;
+     leds4[10] = CRGB::Red;
+     leds4[2] = CRGB::Red;
+     leds4[3] = CRGB::Red;
+     leds4[4] = CRGB::Red;
+     leds4[5] = CRGB::Red;
+     leds4[7] = CRGB::Red;
+     leds4[6] = CRGB::Red;
+  }
+          else if(NUMBER == 6){
+     leds4[13] = CRGB::Red;
+     leds4[12] = CRGB::Red;
+     leds4[3] = CRGB::Red;
+     leds4[2] = CRGB::Red;
+     leds4[8] = CRGB::Red;
+     leds4[9] = CRGB::Red;
+     leds4[6] = CRGB::Red;
+     leds4[7] = CRGB::Red;
+     leds4[4] = CRGB::Red;
+     leds4[5] = CRGB::Red;
+     leds4[10] = CRGB::Red;
+     leds4[11] = CRGB::Red;
+  }
+   else if(NUMBER == 7){
+     leds4[12] = CRGB::Red;
+     leds4[13] = CRGB::Red;
+     leds4[0] = CRGB::Red;
+     leds4[1] = CRGB::Red;
+     leds4[4] = CRGB::Red;
+     leds4[5] = CRGB::Red;
+  }
+   else if(NUMBER == 8){
+     leds4[0] = CRGB::Red;
+     leds4[1] = CRGB::Red;
+     leds4[2] = CRGB::Red;
+     leds4[3] = CRGB::Red;
+     leds4[4] = CRGB::Red;
+     leds4[5] = CRGB::Red;
+     leds4[6] = CRGB::Red;
+     leds4[7] = CRGB::Red;
+     leds4[8] = CRGB::Red;
+     leds4[9] = CRGB::Red;
+     leds4[10] = CRGB::Red;
+     leds4[11] = CRGB::Red;
+     leds4[12] = CRGB::Red;
+     leds4[13] = CRGB::Red;
+  }
+    else if(NUMBER == 9){
+     leds4[0] = CRGB::Red;
+     leds4[1] = CRGB::Red;
+     leds4[4] = CRGB::Red;
+     leds4[5] = CRGB::Red;
+     leds4[6] = CRGB::Red;
+     leds4[7] = CRGB::Red;
+     leds4[3] = CRGB::Red;
+     leds4[2] = CRGB::Red;
+     leds4[10] = CRGB::Red;
+     leds4[11] = CRGB::Red;
+     leds4[12] = CRGB::Red;
+     leds4[13] = CRGB::Red;
+  }
+
+   FastLED.show();
+}
+
+void KILL(){
+   FastLED.addLeds<NEOPIXEL, DATA_PIN1>(leds1, NUM_LEDS);
+   FastLED.addLeds<NEOPIXEL, DATA_PIN2>(leds2, NUM_LEDS);
+   FastLED.addLeds<NEOPIXEL, DATA_PIN3>(leds3, NUM_LEDS);
+   FastLED.addLeds<NEOPIXEL, DATA_PIN4>(leds4, NUM_LEDS);
+   
+   for(int i = 0;i <= 13;i++){
+       leds1[i] = CRGB::Black;
+       leds2[i] = CRGB::Black;
+       leds3[i] = CRGB::Black;
+       leds4[i] = CRGB::Black;
+   }
+     FastLED.show();
+
+}
+void AUSGABE(int wert1, int wert2, int wert3, int wert4){
+ANZEIGE_1(wert1);
+ANZEIGE_2(wert2);
+ANZEIGE_3(wert3);
+ANZEIGE_4(wert4);
+}
+void setup() {
+
+}
+
+void loop() {
+   
+   for( int i = 0; i < 10; i++){
+AUSGABE(i,i,i,i);
+delay(1000);
+KILL();
+
+}
+
+}
